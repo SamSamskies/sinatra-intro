@@ -1,0 +1,8 @@
+<% if @username %>
+<h1>Thank You <%= @username %></h1>
+<% else %>
+<form action="/" method="post">
+  <input type="text" name="username">
+  <input type="submit" value="Save">
+</form>
+<% end %>
